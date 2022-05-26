@@ -403,18 +403,18 @@ label {
    $(function(){
       var musicList=[" "];
       var musicStar=[" "]
-      var musicListen=["Forever After All.mp3","Cardigan.mp3","Memories.mp3","Shallow.mp3","YOU&I.mp3","Lost Cause.mp3","bad guy.mp3","lovely.mp3","Breathless.mp3","How Far I'll Go.mp3","Speechless.mp3","Flashlight.mp3","Skyscraper.mp3","Firework.mp3","Titanium.mp3","I Wrote a Song Using Only Hate Comments 2.mp3","Peaches.mp3","Hold On.mp3","Yummy.mp3","Lonely.mp3","Intentions.mp3","Purpose.mp3"];
-      var musicStaren=["Luke Combs","Taylor Swift","Maroon 5","Lady Gaga,Bradley Cooper","J.R.A","Billie Eilish","Billie Eilish","Billie Eilish,Khalid","Shayne Ward","Alessia Cara","Naomi Scott","Jessie J","Demi Lovato","Madilyn Bailey","Madilyn Bailey","Madilyn Bailey","Justin Bieber","Justin Bieber","Justin Bieber","Justin Bieber","Justin Bieber","Justin Bieber"];
-	  var musicListjp=["01 - Raindrops Keep Fallin' on My Head.m4a","02 - Yoru ni Kakeru.m4a","03 - Under the Bridge.m4a","04 - Senbonzakura.m4a","05 - I'm Yours.m4a","06 - Riptide.m4a","07 - You Are My Sunshine.m4a","08 - Bad Apple!!.m4a"];
-      var musicStarjp=["","","","","","","",""];
+      var musicListen=[" "];
+      var musicStaren=[" "];
+	  var musicListjp=["01 - Raindrops Keep Fallin' on My Head.m4a","02 - Yoru ni Kakeru.m4a","03 - Under the Bridge.m4a","04 - Senbonzakura.m4a","05 - I'm Yours.m4a","06 - Riptide.m4a","07 - You Are My Sunshine.m4a","08 - Bad Apple!!.m4a","09 - Song of the Ancients.m4a","10 - Song of the Ancients.m4a","11 - Take Me Home, Country Roads.m4a","12 - The Moon Song.m4a","13 - Sunday Morning.m4a","14 - Daylight.m4a","15 - Memories.m4a","16 - Somewhere Over the Rainbow-What a Wonderful World.m4a","17 - Gawr Gura Background Music.m4a","18 - Hey, Soul Sister.m4a","19 - Skinny Love.m4a","20 - Ame Doesn't Know I Exist.m4a","21 - La Vie en Rose.m4a"];
+      var musicStarjp=["","","","","","","","","","","","","","","","","","","","",""];
 	  var totallist=[musicList,musicListen,musicListjp];
 	  var totalstarlist=[musicStar,musicStaren,musicStarjp];
 	  var myAudio=document.getElementById("myAudio");
       myAudio.volume=document.getElementById("soundRange").value/100;
       var nowMusicNum=0;
-	  var totalNum=30;
-	  var totalNumen=21;
-	  var totalNumjp=15;
+	  var totalNum=0;
+	  var totalNumen=0;
+	  var totalNumjp=21;
       //default play first song 
       $("#myAudio source").attr("src","music/"+(musicList[nowMusicNum])+"");
       //display song info
